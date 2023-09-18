@@ -4,20 +4,16 @@ The function should not have any parameters.
 Write a main program that rolls the dice until the result is 6.
 The main program should print out the result of each roll
 """
-import random
-def dice_roll(num):
-    num = random.range(1,6)
-    return
+from random import randint
+def dice_roll():
+    return randint(1,6)
 
-i = 0
-list = []
-for i in range(1,6):
-    i = random.randint(1,6)
-    if i == 6:
+
+while True:
+    result = dice_roll()
+    print(f"It's: {result}.")
+    if result == 6:
         break
-    else:
-        list.append(i)
-print([list])
 
 
 
