@@ -10,9 +10,9 @@ def dice_roll():
 
 
 while True:
-    result = dice_roll()
-    print(f"It's: {result}.")
-    if result == 6:
+    i = dice_roll()
+    print(f"It's: {i}.")
+    if i == 6:
         break
 
 
