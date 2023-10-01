@@ -1,9 +1,7 @@
-length = input("Tell me the length of the zander in centimeters: ")
-size_limit = 42
-length = float(length)
-if length < size_limit:
-    print("not fulfill the size limit!!!")
-    print("size limit:>=42cm")
-    print("release the fish back into the lake, please!")
-elif length >= 42:
-    print("Hyvää!!!")
+length =float(input("How long is the zander in centimeter?\n"))
+if length < 42:
+    i = 42 - length
+    print("Release the fish back into the lake!\n"
+          f"This one was {i}centimeters below the size limit")
+else:
+    print("Great!!!")
