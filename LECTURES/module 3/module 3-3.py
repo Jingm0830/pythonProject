@@ -1,17 +1,22 @@
 gander = input("Enter your biological gander--F/M: ")
-hemoglobin = float(input("Enter your hemoglobin value(g/l):  "))
+
 if gander == "F":
-    if hemoglobin>=117 and hemoglobin<=155 :
+    hemoglobin_F = float(input("Enter your hemoglobin value(g/l):  "))
+    if hemoglobin_F>=117 and hemoglobin_F<=155 :
      print("A normal hemoglobin value!")
-    elif hemoglobin <117:
+    elif hemoglobin_F <117:
      print("The hemoglobin value is low!")
-    elif hemoglobin>155:
-     print("The hemoglobin value is high!")
-elif gander == "M":
-    if hemoglobin>=134 and hemoglobin<=167 :
-     print("A normal hemoglobin value!")
-    elif hemoglobin <134 :
-     print("The hemoglobin value is low!")
-    elif hemoglobin>167:
+    else:
      print("The hemoglobin value is high!")
 
+elif gander == "M":
+    hemoglobin_M = float(input("Enter your hemoglobin value(g/l):  "))
+    if hemoglobin_M>=134 and hemoglobin_M<=167 :
+     print("A normal hemoglobin value!")
+    elif hemoglobin_M <134 :
+     print("The hemoglobin value is low!")
+    else:
+     print("The hemoglobin value is high!")
+
+else:
+    print("Invalid!")
