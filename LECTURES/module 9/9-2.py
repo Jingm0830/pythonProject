@@ -26,6 +26,7 @@ class car:
         else:
             self.speed = current_speed
 
+
 CAR = car("MINI",140)
 
 CAR.accelerate(+30)
