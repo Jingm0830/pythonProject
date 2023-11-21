@@ -10,9 +10,9 @@ In the main program, write the statements for creating a new building
 and running the elevators of the building.
 """
 class Elevator:
-    def __init__(self, elevator_number, current_floor=1):
+    def __init__(self, elevator_number, button_floor=1):
         self.elevator_number = elevator_number
-        self.current_floor = current_floor
+        self.current_floor = button_floor
 
     def move_to(self, target_floor):
         self.target_floor = target_floor
